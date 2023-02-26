@@ -6,20 +6,20 @@ package main
 
 // package main
 
-import (
-	"fmt"
-	"golang-study/lib"
-	"runtime"
-	"strconv"
-)
+// func main() {
+// s := "aaaa"
+// // var s1 string = "100"
 
-func main() {
-	s := "aaaa"
-	// var s1 string = "100"
+// n, err := strconv.Atoi(s)
+// fmt.Println(n, err)
 
-	n, err := strconv.Atoi(s)
-	fmt.Println(n, err)
+// fmt.Printf("go version: %s\n", runtime.Version())
+// fmt.Println(lib.Add(1, 2))
 
-	fmt.Printf("go version: %s\n", runtime.Version())
-	fmt.Println(lib.Add(1, 2))
-}
+// type g int
+// const a = 13
+// b := 10.3 + a
+
+// fmt.Println(b)
+
+// }
