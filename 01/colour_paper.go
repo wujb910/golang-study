@@ -1,18 +1,33 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"golang-study/lib"
+)
 
 func main() {
+	lib.Add(1, 2)
 	const (
 		red = 1 << iota
 		yellow
 		blue
 	)
 
+	zhiyin := make(map[string][]int)
+	zhiyin["a"] = []int{12345}
+	zhiyin["b"] = make([]int, 0)
+	zhiyin["b"] = append(zhiyin["b"], 123456)
+
+	// var a string = "\"a\""
+	// var b string = `"a"`
+
 	type colourPaper struct {
 		colours int8
 	}
-
+	// x := colourPaper{
+	// 	colours: red,
+	// }
+	// var paper [5]colourPaper
 	paper := [5]colourPaper{
 		{
 			colours: 4,
