@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type Cat interface {
+type GoodCat interface {
 	Miaow() string
 }
 
@@ -50,7 +50,7 @@ type Shoes struct {
 }
 
 // 任意叫
-func AnyMiaow(c Cat) string {
+func AnyMiaow(c GoodCat) string {
 	return c.Miaow()
 }
 
@@ -60,7 +60,7 @@ func AddWeight(h *Human) {
 
 func main() {
 	tz := new(Tuanzi)
-	cat := Cat(tz)
+	cat := GoodCat(tz)
 	ecat := EvilCat(tz)
 	print(cat, ecat)
 
